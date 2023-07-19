@@ -3,7 +3,7 @@ import sys
 import requests
 
 def get_current_version():
-    return "01/01/2000"  # Remplacez ceci par la version actuelle de votre script
+    return "01/01/2001"  # Remplacez ceci par la version actuelle de votre script
 
 def get_latest_version(repo_owner, repo_name):
     url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/releases/latest'
@@ -42,4 +42,4 @@ if __name__ == "__main__":
         print("Le script a été mis à jour avec succès.")
     else:
         print(f'Vous utilisez déjà la dernière version ({current_version}).')
-V = "1"
+V = "2"
